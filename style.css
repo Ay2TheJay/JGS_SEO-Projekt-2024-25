@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+header {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
+header h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 28px;
+	text-align: left;
+}
+.logo {
+            position: absolute;
+            top: 40px;
+			left: 40px;
+            width: 25%; 
+            height: auto;
+			align-items: left;
+        }
+        .hamburger-menu {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .hamburger-menu div {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+        }
+        header h1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #9ACD32;
+            font-size: 24px;
+        }
+        header h2 {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+			align-text: flex-end;
+            color: #ffffff;
+            font-size: 48px;
+        }
+        .hero {
+            text-align: center;
+            padding: 20px 10%;
+            background-color: #fff;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #666;
+        }
+        .cta {
+            display:inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ffff6c;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        .product {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            padding: 20px 10%;
+            background-color: #f8f8f8;
+        }
+        .product img {
+            width:auto;
+            height: 350px;
+            margin-right: 20px;
+        }
+        .product h2 {
+            font-size: 48px;
+			text-align: left;
+            color: #000;
+        }
+        .product p {
+            font-size: 18px;
+            color: #666;
+            text-align: left;
+        }
+     
+		.applications p {
+            font-size: 18px;
+            color: #666;
+            text-align: center;
+        }
+        .applications {
+            padding: 50px 10%;
+            background-color: #fff;
+        }
+        .applications h2 {
+            text-align: center;
+            font-size: 48px;
+            color: #000;
+        }
+        .applications .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .applications .grid div {
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            position: relative;
+        }
+        .applications .grid div img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .applications .grid div h3 {
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .applications .grid div p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+		.mission h2 {font-size: 48px}
+		
+		
+		
+		
+        @media (max-width: 768px) {   .applications .grid {  grid-template-columns: 1fr;   }   }
+		
+		
+		
+        .mission {
+            padding: 20px 10%;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .mission h2 {
+            font-size: 48px;
+            color: #000;
+        }
+        .mission p {
+            font-size: 18px;
+            color: #666;
+            margin: 20px 0;
+        }
+        .contact {
+            padding: 50px 10%;
+            background-color: #fff;
+            text-align: center;
+        }
+		.contact h2 {font-size: 48px}
+		
+        .contact p {
+            font-size: 18px;
+            color: #666;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;
+        }
+        .faq {
+            padding: 50px 10%;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .faq h2 {
+            font-size: 24px;
+            color: #000;
+        }
+        .faq p {
+            font-size: 18px;
+            color: #666;
+            cursor: pointer;
+            text-align: left;
+        }
+        .faq p + div {
+            display: none;
+            text-align: left;
+        }
+        footer {
+            padding: 20px 10%;
+            background-color: #fff;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 18px;
+                top: 10px;
+                left: 10px;
+            }
+            header h2 {
+                font-size: 20px;
+            }
+			
+			
+            .hero p {
+                font-size: 16px;
+            }
+            .product h2 {
+                font-size: 20px;
+            }
+            .product p {
+                font-size: 16px;
+            }
+			
+			.applications h2 			
+			{font-size: 20px}
+			
+            .applications .grid div h3 {
+                font-size: 18px;
+            }
+            .applications .grid div p {
+                font-size: 14px;
+            }
+            .mission h2 {
+                font-size: 20px;
+            }
+            .mission p {
+                font-size: 16px;
+                padding: 0 5%;
+            }
+			
+			.contact h2 
+			
+			{font-size: 20px}
+			
+            .contact p {
+                font-size: 16px;
+            }
+            .faq h2 {
+                font-size: 20px;
+            }
+            .faq p {
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h2 {
+                font-size: 18px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
+            .product h2 {
+                font-size: 18px;
+            }
+            .product p {
+                font-size: 14px;
+            }
+
+            .applications .grid div h3 {
+                font-size: 16px;
+            }
+            .applications .grid div p {
+                font-size: 12px;
+            }
+            .mission h2 {
+                font-size: 18px;
+            }
+            .mission p {
+                font-size: 14px;
+                padding: 0 2%;
+            }
+            .contact p {
+                font-size: 14px;
+            }
+            .faq h2 {
+                font-size: 18px;
+            }
+            .faq p {
+                font-size: 14px;
+            }
+}
+footer {
+    background-color: #ffff6c;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    margin: 0;
+}
